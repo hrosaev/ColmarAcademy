@@ -13,7 +13,6 @@
 
     header {
         height: 64px;
-        /* position: fixed; */
         display: flex;
         width: 100%;
         top: 0;
@@ -23,13 +22,17 @@
         background-color: white;
     }
 
-    nav {
+    header .mobile {
+        display: none;
+    }
+
+    .desktop {
         margin-right: 24px;
         font-family: Oxygen;
         font-size: 18px;
     }
 
-    span {
+    .desktop span {
         margin: 0 8px;
         color:  rgb(71, 70, 70);;
     }
@@ -345,11 +348,12 @@
         width: 60%;
         margin: 0 24px 32px 24px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .content-left4 video {
         display: flex;
+        height: 400px;
     }
 
     .content-left4 h2 {
@@ -427,8 +431,287 @@
     }
  
 }
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 860px) {
+    
+    .desktop span {
+        display: none;
+    }
+
+    .logo-text1, .logo-text2 {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobile {
+        width: 100%;
+    }
+
+    header .mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .container-1 {
+        width: 100%;
+        background-color: lightgrey;
+    }
+
+    .container-1 img {
+        width: 100%;
+        height: 275px;
+    }
+
+    .sub-1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: Oxygen;
+        color: rgb(71, 70, 70);
+        padding: 32px 16px;
+    }
+
+    .sub-1 h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 32px;
+        width: 80%;
+        margin: 0;
+    }
+
+    .sub-1 h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        line-height: 32px;
+        width: 80%;
+    }
+
+    .banner-button-div {
+        width: 90%;
+        line-height: 12px;
+    }
+     
+    .banner-button {
+        color: aliceblue;
+        padding: 20px 30px;
+        background-color: rgb(131, 129, 129);
+        font-family: Oxygen;
+        font-size: 16px;
+        text-align: center;
+        margin: 0;
+    }
+
+    /* SECTION 2 */
+
+    .content-left {
+        display: none;
+    }
+
+    .content-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    /* right-topcenter */
+
+    .right-topcenter, .right-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 16px;
+    }
+
+    .right-topcenter img {
+        height: 150px;
+        width: 100%;
+    }
+
+    .right-topcenter .text-aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 24px 24px 16px;
+    }
+
+    .text-aside h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(71, 70, 70);
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+
+    .text-aside p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(94, 93, 93);
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    .right-topcenter .text-aside a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        color: cornflowerblue;
+    }
+    
+    .right-bottom img {
+        height: 150px;
+        width: 100%;
+    }
+
+    .right-bottom .text-aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 24px 24px 16px;
+    }
+
+    .right-bottom .text-aside h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(71, 70, 70);
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+
+    .right-bottom .text-aside p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(94, 93, 93);
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    .right-bottom .text-aside a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        color: cornflowerblue;
+    }
+
+    /* SECTION 3 */
+
+    .container-3 {
+        background-color: rgb(241, 240, 240);
+        width: 100%;
+        height: 515px;
+        padding-top: 32px;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+    }
+
+    .container-3 h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(71, 70, 70);
+        font-size: 32px;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .big-box {
+        margin: 8px 8px 32px 8px;
+    }
+    
+    .big-box .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rowel {
+        width: 100%;
+        margin: 0 14px 14px 14px;
+        background-color: lightgrey;
+        width: 90%;
+    }
+    .img-box {
+        display: none;
+    }
+
+    .rowel .text-below {
+        background-color: lightgrey;
+    }
+
+    .rowel .text-below h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(71, 70, 70);
+        font-weight: 500;
+        font-size: 20px;
+        margin: 16px 0 16px 14px;
+    }
+
+    .rowel .text-below p {
+        display: none;
+    }
+
+    /* SECTION 4 */
+
+    .container-4 {
+        background-color: white;
+        width: 100%;
+        height: 285     px;
+        padding-top: 32px;
+    }    
+
+    .container-4 h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(71, 70, 70);
+        font-size: 32px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .box4 {
+        display: flex;
+    }
+
+    .box4 .content-left4 {
+        width: 100%;
+    }
+
+    .content-left4 video {
+        height: 220px;
+        width: 100%;
+    }
+
+    .content-left4 h2 {
+        display: none;
+    }
+    
+    .content-left4 p {
+        display: none;
+    }
+
+    .box4 .content-right4 {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    .foot {
+        background-color: rgb(255, 255, 255);
+        border-top: 2px solid lightgrey;
+        height: 50px;
+        margin-top: 0;
+        display: flex;
+    }
+
+    .foot p {
+        float: left;
+        padding-left: 24px;
+        padding-top: 24px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        color: rgb(117, 117, 117);
+        width: 75%;
+    }
+    
+    .foot .opciones {
+        display: none;
+    }
 
 }
-
-
